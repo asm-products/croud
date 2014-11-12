@@ -1,0 +1,25 @@
+var postsData = [
+    {
+	title: 'This site will be dedicated to those who need crowds.',
+	url: 'http://en.wikipedia.org/wiki/Flash_mob'
+    },
+    {
+	title: 'And those who want to be the crowd.',
+	url: 'http://www.vice.com/read/its-now-possible-to-hire-fake-protesters'
+    },
+    {
+	title: 'This site is running on meteor.js, by the way.',
+	url: 'http://themeteorbook.com'
+    }
+];
+
+Posts = new Mongo.Colection("posts");
+
+if (Meteor.isClient){
+Template.postsList.helpers({
+   // posts: postsData
+    posts: function() {
+	return Posts.find({});
+    }
+});
+}
