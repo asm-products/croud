@@ -1,13 +1,8 @@
 <template name="layout">
 	<div class="container">
-		<header class="navbar navbar-default" role="navigation">
-			<div class="navbar-header">
-			  <a class="navbar-brand" href="{{pathFor 'postsList'}}">Croud</a><p>Hosted on my raspberry pi</p>
-			  <p>Open your browser console, and type Posts.insert({title:"Enter whatever you want here"}); to enter a new post. Watch it asynchronously update across multiple devices.</p>
-			</div>
-		</header>
-	<div id="main" class="row-fluid">
-	{{> yield}}
-	</div>
+		{{> header}}
+		<div id="main" class="row-fluid">
+		{{> yield}}
+		</div>
 </div>
 </template>
