@@ -1,0 +1,9 @@
+<template name="editProfile">
+	<div class="jumbotron container">
+	
+	{{#if currentUser}}
+	<h1>{{currentUser.username}}</h1>
+		{{> userUpdate}}
+	{{/if}}
+	</div>
+</template>

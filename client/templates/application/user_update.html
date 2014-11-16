@@ -1,0 +1,23 @@
+<template name="userUpdate">
+  
+  <script>
+	window.onload = function() {
+	  var autocomplete = new google.maps.places.Autocomplete(
+	    (document.getElementById('autocomplete')),{types: ['geocode'] }
+	  );
+	};
+	</script>
+	<form class="main form" autocomplete="off">
+			<label class="control-label" for="location">Location</label>
+				<div class="controls">
+
+				<div id="locationField">
+		  		<input id="autocomplete" name="userLocation" class="autocomplete form-control" autocomplete="off" placeholder="Where you live." type="text">
+			</div>
+				</div>
+  <p>
+  	<h4 id="setLocation">{{currentUser.profile.location}}</h4>
+    <input id="updateUser" type="submit" class="btn btn-primary" value="Update Profile" />
+  </p>
+  </form>
+</template>

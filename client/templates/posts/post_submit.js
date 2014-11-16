@@ -3,7 +3,7 @@ Template.postSubmit.events({
 	  e.preventDefault();
 
 var post = {
-	url: $(e.target).find('[name=url]').val(),
+	location: $(e.target).find('[name=location]').val(),
 	title: $(e.target).find('[name=title]').val()
 };
 	post._id = Posts.insert(post);
