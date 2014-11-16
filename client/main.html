@@ -1,4 +1,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Croud</title>
+	<script>
+			window.onload = function() {
+			  var autocomplete = new google.maps.places.Autocomplete(
+			    (document.getElementById('autocomplete')),{types: ['geocode'] }
+			  );
+			  var autocompleteEventPost = new google.maps.places.Autocomplete(
+			    (document.getElementById('autocompleteEventPost')),{types: ['geocode'] }
+			  );
+			};
+	</script>
 </head>

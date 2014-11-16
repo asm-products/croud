@@ -16,14 +16,14 @@ var post = {
 /*
 This code includes the google javascript places api everytime the template is rendered*/
 Template.postSubmit.rendered = function(){
-	 var script = document.createElement("script");
+	 /*var script = document.createElement("script");
 	 script.type = "text/javascript";
 	 script.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places";
 	 document.body.appendChild(script);
 
-	 		window.onload = function() {
-	  var autocomplete = new google.maps.places.Autocomplete(
-	    (document.getElementById('autocomplete')),{types: ['geocode'] }
-	  );
-	};
+			window.onload = function() {
+			  var autocompleteEventPost = new google.maps.places.Autocomplete(
+			    (document.getElementById('autocompleteEventPost')),{types: ['geocode'] }
+			  );
+			};*/
 }
