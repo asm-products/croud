@@ -1,5 +1,5 @@
 
-/*Template.userUpdate.rendered = function(){
+Template.userUpdate.rendered = function(){
 	 var script = document.createElement("script");
 	 script.type = "text/javascript";
 	 script.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places";
@@ -10,7 +10,7 @@
 	    (document.getElementById('autocomplete')),{types: ['geocode'] }
 	  );
 	};
-}*/
+}
 
 Template.userUpdate.events({
 	'click #updateUser': function(e) {
