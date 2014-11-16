@@ -5,11 +5,11 @@
 
 meteor-platform
 underscore
-less
-mizzao:bootstrap-3
 iron:router
 sacha:spin
 ian:accounts-ui-bootstrap-3
 accounts-password
 email
 mrt:googlemaps
+mizzao:bootstrap-3
+
