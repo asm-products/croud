@@ -12,7 +12,7 @@
 
 				<!--begin google test-->
 
-		<!--	<script>
+			<!--<script>
 			window.onload = function() {
 			  var autocomplete = new google.maps.places.Autocomplete(
 			    (document.getElementById('autocomplete')),{types: ['geocode'] }
@@ -20,11 +20,19 @@
 			};
 			</script>-->
 
+
+						<div class="form-group">
+							<label class="control-label" for="title">Description</label>
+								<div class="controls">
+									<textarea class="form-control" placeholder="Describe the event and its requirements." name="description"></textarea>
+								</div>
+						</div>
+							
 						<label class="control-label" for="location">Event Location</label>
 							<div class="controls">
-								<!--<input name="location" id="url" type="text" value="" placeholder="The location of the vent" class="form-control"/>-->
 							<div id="locationField">
-					  		<input id="autocompleteEventPost" name="location" autocomplete="off" placeholder="Event Location" type="text">
+					  		<input id="autocompleteEventPost" name="location" autocomplete="off" placeholder="Event Location" class="form-control" type="text">
+
 						</div>
 							</div>
 						</div>

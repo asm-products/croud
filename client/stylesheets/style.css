@@ -152,3 +152,21 @@ clear: both;
 margin-bottom: 5px;
 pointer-events: auto;
 }
+
+#eventTitle{
+	float: left;
+	/*clear: right;*/
+}
+#location{
+/*clear: both;*/
+}
+
+#descriptionEvent{
+	/*clear: left;*/
+	width: 60%;
+	float: left;
+	text-align: center;
+}
+#attend{
+	vertical-align: middle;
+}
