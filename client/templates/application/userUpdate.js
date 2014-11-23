@@ -12,6 +12,22 @@ Template.userUpdate.rendered = function(){
 	};*/
 }
 
+var initAutoComplete = function() {
+      var autocomplete = new google.maps.places.Autocomplete(
+        (document.getElementById('autocomplete')),{types: ['geocode'] }
+      );
+};
+
+var initAutoCompletePost = function() {
+      var autocomplete = new google.maps.places.Autocomplete(
+        (document.getElementById('autocomplete')),{types: ['geocode'] }
+      );
+};
+
+Template.userUpdate.rendered = initAutoComplete;
+
+Template.postSubmit.rendered = initAutoCompletePost;
+
 Template.userUpdate.events({
 	'click #updateUser': function(e) {
 	  e.preventDefault();
